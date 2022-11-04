@@ -286,3 +286,33 @@ button.comprar .button-text a:hover {
 button:hover .circle {
   width: 100%;
 }
+
+.piepagina {
+  margin-top: 5%;
+  background-color: #e6ccb2;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 2%;
+}
+
+.piepagina div {
+  display: inline-block;
+  text-align: center;
+  padding-left: 5%;
+  align-items: center;
+}
+
+.seccionfooter {
+  width: 27%;
+  vertical-align: middle;
+}
+
+.imagenesfooter {
+  width: 30px;
+  height: 30px;
+  padding-left: 5px;
+}
+
+.informacion {
+  color: #7f5539;
+}

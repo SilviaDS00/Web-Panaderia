@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -67,8 +68,67 @@
         </div>
     </header>
     <main>
-        <div class="tarjeta-producto"><h3>hola</h3></div>
+        <div>
+            <div class="titulossecciones">
+                <h3>Carrito</h3>
+            </div>
+            <!--<div class="tarjeta-producto">
+                <span><img class="imagen-producto" src="/imagenes/pan-rustico.jpg" alt=""></span>
+                <span class="titulo-producto">Pan Rustico</span>
+                <span class="titulo-producto">hola</span>
+            </div>-->
     </main>
+    <div class="page">
+        <table id="cart">
+            <thead>
+                <tr>
+                    <th class="first">Foto</th>
+                    <th class="second">Cantidad</th>
+                    <th class="third">Producto</th>
+                    <th class="fourth">Precio</th>
+                    <th class="fifth">&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- shopping cart contents -->
+                <tr class="productitm">
+                    <!-- http://www.inkydeals.com/deal/ginormous-bundle/ -->
+                    <td><img src="imagenes/pan-rustico.jpg" class="thumb"></td>
+                    <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+                    <td>Pan rustico</td>
+                    <td>2€</td>
+                    <td><span class="remove">X</span></td>
+                </tr>
+
+                <!-- tax + subtotal -->
+                <tr class="extracosts">
+                    <td class="light">Envio</td>
+                    <td colspan="2" class="light"></td>
+                    <td>2€</td>
+                    <td></td>
+                </tr>
+                <tr class="totalprice">
+                    <td class="light">Total:</td>
+                    <td colspan="2">&nbsp;</td>
+                    <td colspan="2"><span class="thick">4€</span></td>
+                </tr>
+
+                <!-- checkout btn -->
+                <tr class="checkoutrow">
+                    <td colspan="5" class="checkout">
+                        <div class="boton-comprar">
+                            <button class="comprar"><a href="carrito.html"></a>
+                                <span class="circle" aria-hidden="true">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text"><a href="">Comprar</a></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
