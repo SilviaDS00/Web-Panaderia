@@ -68,8 +68,82 @@ nav ul li a img:hover {
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
 }
+.btn-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: end;
+  background-color: transparent;
+}
+
+.btn-menu {
+  height: 4.3rem;
+  width: 9rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  transition-timing-function: linear;
+  transition-property: all;
+}
+
+.btn-container button a {
+
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  transition-timing-function: linear;
+  transition-property: all;
+  color: white;
+
+}
+.btn-iconos {
+  height: 4.3rem;
+  width: 4.3rem;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  background-color: transparent;
+  cursor: pointer;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  transition-timing-function: linear;
+  transition-property: all;
+  color: white;
+}
+
+.btn-container button a:hover {
+  font-size: 15px;
+  color: #7f5539;
+}
+
+.btn-container button:hover img {
+  width: 30px;
+}
 
 /*--Inicio del main--*/
+
+.iconos-centrados {
+  padding-top: 2%;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.iconos-centrados div {
+  display: inline-block;
+  margin: 0 2%;
+}
+
 .titulossecciones {
   text-align: center;
   border-bottom: 2px #7f5539 solid;
@@ -211,342 +285,4 @@ button.comprar .button-text a:hover {
 
 button:hover .circle {
   width: 100%;
-}
-
-/*--Tarjetas del inicio--*/
-.iconos-centrados {
-  padding-top: 2%;
-  text-align: center;
-  padding-bottom: 3%;
-}
-
-.iconos-centrados div {
-  display: inline-block;
-  margin: 0 2%;
-}
-
-.btn-container {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: end;
-  background-color: transparent;
-}
-
-.btn-menu {
-  height: 4.3rem;
-  width: 9rem;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;
-  transition-timing-function: linear;
-  transition-property: all;
-}
-
-.btn-container button a {
-
-  text-decoration: none;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 3px;
-  cursor: pointer;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;
-  transition-timing-function: linear;
-  transition-property: all;
-  color: white;
-
-}
-
-.btn-iconos {
-  height: 4.3rem;
-  width: 4.3rem;
-  border: none;
-  outline: none;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 3px;
-  background-color: transparent;
-  cursor: pointer;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;
-  transition-timing-function: linear;
-  transition-property: all;
-  color: white;
-}
-
-.btn-container button a:hover {
-  font-size: 15px;
-  color: #7f5539;
-}
-
-.btn-container button:hover img {
-  width: 30px;
-}
-
-/*Tarjetas de nuestros servicios*/
-.card {
-  width: 250px;
-  height: 300px;
-  background: #b08968;
-  border-radius: 15px;
-  border: 2px solid #e6ccb2;
-  transition: 200ms ease-out;
-  overflow: visible;
-}
-
-.card:hover {
-  border-color: #7f5539;
-  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-}
-
-.card .card-border-top {
-  width: 60%;
-  height: 3%;
-  background: #e6ccb2;
-  margin: auto;
-  border-radius: 0px 0px 15px 15px;
-}
-
-.card span {
-  font-weight: 600;
-  color: white;
-  text-align: center;
-  display: block;
-  padding-top: 10px;
-  font-size: 16px;
-}
-
-.card .job {
-  font-weight: 400;
-  color: white;
-  display: flex;
-  text-align: center;
-  padding-top: 3px;
-  font-size: 14px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.imagenes-main {
-  width: 60px;
-  align-items: center;
-  margin-top: 10px;
-  margin-left: 4px;
-}
-
-.card .img {
-  width: 70px;
-  height: 80px;
-  background: #e6ccb2;
-  border-radius: 15px;
-  margin: auto;
-  margin-top: 25px;
-}
-
-.tarjetas-centradas {
-  float: left;
-}
-
-/*Footer*/
-.piepagina {
-  margin-top: 5%;
-  background-color: #e6ccb2;
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-bottom: 2%;
-}
-
-.piepagina div {
-  display: inline-block;
-  text-align: center;
-  padding-left: 5%;
-  align-items: center;
-}
-
-.seccionfooter {
-  width: 27%;
-  vertical-align: middle;
-}
-
-.imagenesfooter {
-  width: 30px;
-  height: 30px;
-  padding-left: 5px;
-}
-
-.informacion {
-  color: #7f5539;
-}
-
-/*Comentarios de la web*/
-.comentarios {
-  padding-left: 10%;
-  padding-right: 10%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-.comentarios div {
-  display: inline-block;
-  align-items: center;
-}
-
-.social-media {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 2px;
-  padding: 2%;
-  list-style: none;
-  width: 28%;
-  font-size: 13px;
-  border: 2px solid #e6ccb2;
-  border-radius: 2%;
-  transition: 200ms ease-out;
-  overflow: visible;
-
-}
-
-.social-media:hover {
-  border: 2px solid #7f5539;
-}
-
-.imagencomentario {
-  display: block;
-  width: 50px;
-  height: 50px;
-  margin-right: 12px;
-}
-
-.comentario {
-  align-items: flex-start;
-}
-
-.nombreusuario {
-  margin: 0;
-  font-size: 15px;
-}
-
-.fechacomentario {
-  margin: 0;
-  color: grey;
-}
-
-.fechacomentario--space {
-  display: block;
-  padding-left: 4px;
-  color: grey;
-}
-
-.estrellas {
-  display: flex;
-  margin: 8px 0 0;
-  padding: 0;
-  list-style: none;
-  color: #EB6E00;
-}
-
-.textcomentario {
-  margin: 0;
-  font-size: 13px;
-}
-
-/*--Card de productos a la venta--*/
-.cardproducto {
-  width: 300px;
-  height: 300px;
-  background-color: #7f5539;
-  align-items: center;
-}
-
-.imagenproducto {
-  width: 290px;
-  height: 250px;
-
-}
-
-.shop-card {
-  margin: 10px;
-  width: 250px;
-  height: 350px;
-  background: #ffffff;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border: 2px solid #e6ccb2;
-  border-radius: 5px;
-  padding: 20px;
-  text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.shop-card:hover {
-  border-color: #7f5539;
-  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-
-}
-
-.shop-card .title {
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 25px;
-  color: #23211f;
-  margin-bottom: 5px;
-}
-
-.shop-card .desc {
-  font-size: 15px;
-  opacity: .8;
-  margin-bottom: 3px;
-  color: #23211f;
-}
-
-.product {
-  margin: 10px 0;
-}
-
-.product img {
-  width: 100%;
-}
-
-.cta {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.price {
-  color: #7f5539;
-  font-size: 22px;
-  font-weight: 900;
-  transition: color .3s ease-in-out;
-}
-
-.button {
-  font-size: 13px;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #7f5539;
-  ;
-  padding: 12px 18px;
-  cursor: pointer;
-  transition: all 300ms;
-  line-height: .95;
-  border: none;
-  background: none;
-  outline: none;
-  border: 1px solid #7f5539;
-  border-radius: 20px;
-}
-
-.button:hover {
-  background: linear-gradient(135deg, #7f5539, #7f5539);
-  color: #fff;
-  border: none;
 }

@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-productos.css">
     <script>
         const abrir_panel = () => {
-          const panel = document.querySelectorAll('.panel')[0].style;
-          panel.display = panel.display === 'none' ? 'block' : 'none';
+            const panel = document.querySelectorAll('.panel')[0].style;
+            panel.display = panel.display === 'none' ? 'block' : 'none';
         };
-      </script>
+    </script>
 </head>
+
 <body>
     <header>
         <div class="ancho">
@@ -24,41 +26,43 @@
                         <button class="btn-menu"><a href="index.html">Inicio</a></button>
                         <button class="btn-menu"><a href="productos.html">Productos</a></button>
                         <button class="btn-menu"><a href="pedidos.html">Pedidos</a></button>
-                        <button class="btn-iconos"><a  href="#"><img class="imagenes-menu" src="imagenes/perfil.png" alt="Perfil"></a></button>
-                        <button class="btn-iconos" onclick="abrir_panel()"><a href="#"><img class="imagenes-menu" src="imagenes/carrito.png" alt="Carrito"></a></button>
+                        <button class="btn-iconos"><a href="#"><img class="imagenes-menu" src="imagenes/perfil.png"
+                                    alt="Perfil"></a></button>
+                        <button class="btn-iconos" onclick="abrir_panel()"><a href="#"><img class="imagenes-menu"
+                                    src="imagenes/carrito.png" alt="Carrito"></a></button>
                     </div>
                     <div class="panel">
                         <div class="panel-carrito">
-                          <ul class="shopping-cart-items">
-                            <li>
-                              <img src="imagenes/pan-rustico.jpg" alt="item1" />
-                              <span class="item-name">Pan rustico</span>
-                              <span class="item-price">2€</span>
-                              <span class="item-quantity">Cantidad: 01</span>
-                            </li>
-                            <li>
-                              <img src="imagenes/pan-rustico.jpg" alt="item1" />
-                              <span class="item-name">Pan rustico</span>
-                              <span class="item-price">2€</span>
-                              <span class="item-quantity">Cantidad: 01</span>
-                            </li>
-                            <li>
-                              <img src="imagenes/pan-rustico.jpg" alt="item1" />
-                              <span class="item-name">Pan rustico</span>
-                              <span class="item-price">2€</span>
-                              <span class="item-quantity">Cantidad: 01</span>
-                            </li>
-                          </ul>
+                            <ul class="shopping-cart-items">
+                                <li>
+                                    <img src="imagenes/pan-rustico.jpg" alt="item1" />
+                                    <span class="item-name">Pan rustico</span>
+                                    <span class="item-price">2€</span>
+                                    <span class="item-quantity">Cantidad: 01</span>
+                                </li>
+                                <li>
+                                    <img src="imagenes/pan-rustico.jpg" alt="item1" />
+                                    <span class="item-name">Pan rustico</span>
+                                    <span class="item-price">2€</span>
+                                    <span class="item-quantity">Cantidad: 01</span>
+                                </li>
+                                <li>
+                                    <img src="imagenes/pan-rustico.jpg" alt="item1" />
+                                    <span class="item-name">Pan rustico</span>
+                                    <span class="item-price">2€</span>
+                                    <span class="item-quantity">Cantidad: 01</span>
+                                </li>
+                            </ul>
                         </div>
                         <div class="boton-comprar">
-                          <button class="comprar"><a href="carrito.html"></a>
-                            <span class="circle" aria-hidden="true">
-                            <span class="icon arrow"></span>
-                            </span>
-                            <span class="button-text"><a href="">Comprar</a></span>
-                          </button>
+                            <button class="comprar"><a href="carrito.html"></a>
+                                <span class="circle" aria-hidden="true">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text"><a href="">Comprar</a></span>
+                            </button>
                         </div>
-                      </div>
+                    </div>
                 </nav>
             </div>
         </div>
