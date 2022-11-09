@@ -13,11 +13,12 @@
   .card {
     width: 250px;
     height: 300px;
-    background: #b08968;
-    border-radius: 15px;
-    border: 2px solid #e6ccb2;
+    background: #ffffff;
+    border-radius: 10%;
+    border: 2px solid #DDB892;
     transition: 200ms ease-out;
     overflow: visible;
+    padding: 4%;
   }
   
   .card:hover {
@@ -25,50 +26,42 @@
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
   }
   
-  .card .card-border-top {
-    width: 60%;
-    height: 3%;
-    background: #e6ccb2;
-    margin: auto;
-    border-radius: 0px 0px 15px 15px;
-  }
-  
   .card span {
     font-weight: 600;
-    color: white;
+    color: #7f5539;
     text-align: center;
     display: block;
-    padding-top: 10px;
-    font-size: 16px;
-  }
-  
-  .card .job {
+    padding-top: 15%;
+    font-size: 20px;
+    text-transform: uppercase;
+  }  
+    
+    .card .descripcion {
     font-weight: 400;
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     text-align: center;
-    padding-top: 3px;
-    font-size: 14px;
+    font-size: 16px;
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 9%;
   }
   
   .imagenes-main {
-    width: 60px;
+    width: 80px;
     align-items: center;
     margin-top: 10px;
     margin-left: 4px;
   }
   
   .card .img {
-    width: 70px;
-    height: 80px;
-    background: #e6ccb2;
+    width: 100px;
+    height: 100px;
+    background: #DDB892;
     border-radius: 15px;
     margin: auto;
-    margin-top: 25px;
   }
-  
+
   .tarjetas-centradas {
     float: left;
   }
@@ -110,7 +103,6 @@
   .imagencomentario {
     display: block;
     width: 50px;
-    height: 50px;
     margin-right: 12px;
   }
   
@@ -145,4 +137,32 @@
   .textcomentario {
     margin: 0;
     font-size: 13px;
+  }
+
+  .boton-ver-mas {
+    margin-top: 1%;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #e6ccb2;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .boton-ver-mas:hover {
+    background-color: #7f5539;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .boton-ver-mas:active {
+    transform: translateY(-1px);
   }

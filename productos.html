@@ -10,71 +10,77 @@
     <link rel="stylesheet" href="styles-productos.css">
     <script>
         const abrir_panel = () => {
-            const panel = document.querySelectorAll('.panel')[0].style;
-            panel.display = panel.display === 'none' ? 'block' : 'none';
+          const panel = document.querySelectorAll('.panel')[0].style;
+          panel.display = panel.display === 'none' ? 'block' : 'none';
         };
-    </script>
+  
+        const loadfn = () => {
+          const _nav = document.querySelector('nav').style;
+          window.addEventListener('scroll', (e) => {
+            if (window.scrollY > 10) {
+              _nav.backgroundColor = '#b08968';
+              _nav.boxShadow = '2px 2px 4px rgba(0, 0, 0, 0.5)';
+            } else {
+              _nav.backgroundColor = 'transparent';
+              _nav.boxShadow = 'none';
+            }
+          });
+        };
+      </script>
 </head>
 
-<body>
-    <header>
-        <div class="ancho">
-            <div><img src="imagenes/logo.png" alt="logo" width="69rem"></div>
-            <div class="align-derecha">
-                <nav>
-                    <div class="btn-container">
-                        <button class="btn-menu"><a href="index.html">Inicio</a></button>
-                        <button class="btn-menu"><a href="productos.html">Productos</a></button>
-                        <button class="btn-menu"><a href="pedidos.html">Pedidos</a></button>
-                        <button class="btn-iconos"><a href="#"><img class="imagenes-menu" src="imagenes/perfil.png"
-                                    alt="Perfil"></a></button>
-                        <button class="btn-iconos" onclick="abrir_panel()"><a href="#"><img class="imagenes-menu"
-                                    src="imagenes/carrito.png" alt="Carrito"></a></button>
-                    </div>
-                    <div class="panel">
-                        <div class="panel-carrito">
-                            <ul class="shopping-cart-items">
-                                <li>
-                                    <img src="imagenes/pan-rustico.jpg" alt="item1" />
-                                    <span class="item-name">Pan rustico</span>
-                                    <span class="item-price">2€</span>
-                                    <span class="item-quantity">Cantidad: 01</span>
-                                </li>
-                                <li>
-                                    <img src="imagenes/pan-rustico.jpg" alt="item1" />
-                                    <span class="item-name">Pan rustico</span>
-                                    <span class="item-price">2€</span>
-                                    <span class="item-quantity">Cantidad: 01</span>
-                                </li>
-                                <li>
-                                    <img src="imagenes/pan-rustico.jpg" alt="item1" />
-                                    <span class="item-name">Pan rustico</span>
-                                    <span class="item-price">2€</span>
-                                    <span class="item-quantity">Cantidad: 01</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="boton-comprar">
-                            <button class="comprar"><a href="carrito.html"></a>
-                                <span class="circle" aria-hidden="true">
-                                    <span class="icon arrow"></span>
-                                </span>
-                                <span class="button-text"><a href="">Comprar</a></span>
-                            </button>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section>
-            <div class="imagen-principal">
-                <div class="titulo">Panadería Pedrín
-                    <div class="eslogan">El mejor pan en tu casa</div>
+<body onload="loadfn()"> 
+    <div class="ancho">
+        <!--<div><img src="imagenes/logo.png" alt="logo" width="69rem"></div>-->
+        <div class="align-derecha">
+            <nav>
+                <div class="btn-container">
+                    <button class="btn-menu"><a href="index.html">Inicio</a></button>
+                    <button class="btn-menu"><a href="productos.html">Productos</a></button>
+                    <button class="btn-menu"><a href="pedidos.html">Pedidos</a></button>
+                    <button class="btn-iconos"><a  href="#"><img class="imagenes-menu" src="imagenes/perfil.png" alt="Perfil"></a></button>
+                    <button class="btn-iconos" onclick="abrir_panel()"><a href="#"><img class="imagenes-menu" src="imagenes/carrito.png" alt="Carrito"></a></button>
                 </div>
-            </div>
-        </section>
+                <div class="panel">
+                  <div class="panel-carrito">
+                    <ul class="shopping-cart-items">
+                      <li>
+                        <img src="imagenes/pan-rustico.jpg" alt="item1" />
+                        <span class="item-name">Pan rustico</span>
+                        <span class="item-price">2€</span>
+                        <span class="item-quantity">Cantidad: 01</span>
+                      </li>
+                      <li>
+                        <img src="imagenes/pan-de-ciabatta.jpg" alt="item1" />
+                        <span class="item-name">Pan candeal de picos</span>
+                        <span class="item-price">1,75€</span>
+                        <span class="item-quantity">Cantidad: 01</span>
+                      </li>
+                      <li>
+                        <img src="imagenes/bollo-suizo.jpg" alt="item1" />
+                        <span class="item-name">Bollitos suizos</span>
+                        <span class="item-price">3€</span>
+                        <span class="item-quantity">Cantidad: 5</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="boton-comprar">
+                    <button class="comprar"><a href="carrito.html"></a>
+                      <span class="circle" aria-hidden="true">
+                      <span class="icon arrow"></span>
+                      </span>
+                      <span class="button-text"><a href="carrito.html">Comprar</a></span>
+                    </button>
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+    <header>
+        <h1>Panadería Pedrín</h1>
+        <h3>El mejor pan en tu casa</h3>
+    </header>
 
         <section>
             <div class="titulossecciones">
@@ -85,59 +91,49 @@
                     <div class="title">
                         Pan rústico redondo
                     </div>
-                    <div class="desc">
-                        Masa madre
-                    </div>
                     <div class="product">
                         <img src="imagenes/pan-rustico.jpg" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">2,00€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
+                        Pan de Ciabata casero
                     </div>
-                    <div class="desc">
-                        Masa madre
-                    </div>
+
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/pan-de-ciabatta.jpg" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">1,50€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
+                        Pan de viena francés
                     </div>
-                    <div class="desc">
-                        Masa madre
-                    </div>
+
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/pa-de-viena.jpg" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">1,00€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
-                    </div>
-                    <div class="desc">
-                        Masa madre
+                        Pan de maiz casero
                     </div>
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/pan-de-maiz.jpg" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">1,25€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
@@ -145,61 +141,52 @@
             <div class="iconos-centrados">
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
-                    </div>
-                    <div class="desc">
-                        Masa madre
+                        Pan de colón de Salamanca
                     </div>
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/pan-de-colon.png" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">1,50€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
+                        Pan de hogaza candeal
                     </div>
-                    <div class="desc">
-                        Masa madre
-                    </div>
+
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/pan-hogaza-candeal.jpg" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">2,00€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
+                        Pan bimbo integral
                     </div>
-                    <div class="desc">
-                        Masa madre
-                    </div>
+
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/pan-bimbo-integral.jpg" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">2,00€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
+                        Pan de molde casero
                     </div>
-                    <div class="desc">
-                        Masa madre
-                    </div>
+
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/pan-de-molde.jpg" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">1,50€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
@@ -207,61 +194,52 @@
             <div class="iconos-centrados">
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
+                        Pan de centeno
                     </div>
-                    <div class="desc">
-                        Masa madre
-                    </div>
+
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/pan-de-centeno.jpg" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">1,75€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
+                        Pulguitas caseras
                     </div>
-                    <div class="desc">
-                        Masa madre
-                    </div>
+
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/pan-pulguita.jpg" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">0,25€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
-                    </div>
-                    <div class="desc">
-                        Masa madre
+                        Pan de ajo casero
                     </div>
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/pan-de-ajo.jpg" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">0,75€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
+                        Pan de picos casero
                     </div>
-                    <div class="desc">
-                        Masa madre
-                    </div>
+
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/pan-de-picos.webp" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">2,00€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
@@ -269,61 +247,53 @@
             <div class="iconos-centrados">
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
+                        Pan de chapata casero
                     </div>
-                    <div class="desc">
-                        Masa madre
-                    </div>
+
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/receta-pan-chapata.jpg" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">0,50€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
+                        Pan de cebolla
                     </div>
-                    <div class="desc">
-                        Masa madre
-                    </div>
+
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/pan-de-cebolla.webp" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">1,75€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
+                        Pan candeal de picos
                     </div>
-                    <div class="desc">
-                        Masa madre
-                    </div>
+
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/pan-candeal-picos.jpg" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">2,00€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
+                        Croissant de mantequilla
                     </div>
-                    <div class="desc">
-                        Masa madre
-                    </div>
+
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/croissant.jpg" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">0,75€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
@@ -331,61 +301,53 @@
             <div class="iconos-centrados">
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
+                        Croissant de chocolate
                     </div>
-                    <div class="desc">
-                        Masa madre
-                    </div>
+
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/croissant-choco.jpg" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">1,00€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
+                        Napolitana de chocolate
                     </div>
-                    <div class="desc">
-                        Masa madre
-                    </div>
+
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/napolitana-choco.jpg" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">1,00€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
+                        Bollitos de leche
                     </div>
-                    <div class="desc">
-                        Masa madre
-                    </div>
+
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/bollo-leche.jpg" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">0,25€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>
                 <div class='shop-card'>
                     <div class="title">
-                        Pan rústico redondo
+                        Bollitos suizos
                     </div>
-                    <div class="desc">
-                        Masa madre
-                    </div>
+
                     <div class="product">
-                        <img src="imagenes/pan-rustico.jpg" />
+                        <img src="imagenes/bollo-suizo.jpg" />
                     </div>
                     <div class='cta'>
-                        <div class="price">2€</div>
+                        <div class="price">0,35€</div>
                         <button class="button">Añadir al carrito</button>
                     </div>
                 </div>

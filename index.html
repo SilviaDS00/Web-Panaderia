@@ -1,268 +1,288 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panaderia</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles-inicio.css">
-    <script>
-      const abrir_panel = () => {
-        const panel = document.querySelectorAll('.panel')[0].style;
-        panel.display = panel.display === 'none' ? 'block' : 'none';
-      };
-    </script>
-</head>
-<body>
-    <header>
-        <div class="ancho">
-            <div><img src="imagenes/logo.png" alt="logo" width="69rem"></div>
-            <div class="align-derecha">
-                <nav>
-                    <div class="btn-container">
-                        <button class="btn-menu"><a href="index.html">Inicio</a></button>
-                        <button class="btn-menu"><a href="productos.html">Productos</a></button>
-                        <button class="btn-menu"><a href="pedidos.html">Pedidos</a></button>
-                        <button class="btn-iconos"><a  href="#"><img class="imagenes-menu" src="imagenes/perfil.png" alt="Perfil"></a></button>
-                        <button class="btn-iconos" onclick="abrir_panel()"><a href="#"><img class="imagenes-menu" src="imagenes/carrito.png" alt="Carrito"></a></button>
-                    </div>
-                    <div class="panel">
-                      <div class="panel-carrito">
-                        <ul class="shopping-cart-items">
-                          <li>
-                            <img src="imagenes/pan-rustico.jpg" alt="item1" />
-                            <span class="item-name">Pan rustico</span>
-                            <span class="item-price">2€</span>
-                            <span class="item-quantity">Cantidad: 01</span>
-                          </li>
-                          <li>
-                            <img src="imagenes/pan-rustico.jpg" alt="item1" />
-                            <span class="item-name">Pan rustico</span>
-                            <span class="item-price">2€</span>
-                            <span class="item-quantity">Cantidad: 01</span>
-                          </li>
-                          <li>
-                            <img src="imagenes/pan-rustico.jpg" alt="item1" />
-                            <span class="item-name">Pan rustico</span>
-                            <span class="item-price">2€</span>
-                            <span class="item-quantity">Cantidad: 01</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="boton-comprar">
-                        <button class="comprar"><a href="carrito.html"></a>
-                          <span class="circle" aria-hidden="true">
-                          <span class="icon arrow"></span>
-                          </span>
-                          <span class="button-text"><a href="carrito.html">Comprar</a></span>
-                        </button>
-                      </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        
-    </header>
-    <section>
-        <div class="imagen-principal">
-            <div class="titulo">Panadería Pedrín
-                <div class="eslogan">El mejor pan en tu casa</div>
-            </div>
-        </div>
-    </section>
-    <main>
-        <section>
-        <div class="titulossecciones">
-            <h3>¿Qué nos diferencia?</h3>
-        </div>
-        <div class="iconos-centrados">
-            <div class="card">
-                <div class="img"><img class="imagenes-main" src="imagenes/iconopan.png" width="50px" alt="Icono Pan">
-                </div>
-                <span>Innovación</span>
-                <p class="job">Apostamos por la innovacion y el desarrollo de nuevos productos, diferenciales, que destaquen tanto por su sabor y calidad como por su fórmula innovadora.</p>
-              </div>
-              <div class="card">
-                <div class="img"><img class="imagenes-main" src="imagenes/iconopersonalizacion.png" width="50px" alt="">
-                </div>
-                <span>Personalizacion</span>
-                <p class="job">En nuestros establecimientos personalizamos cualquier tipo de dulce, sobretodo nuestras tartas, en las que incluimmos nombres, fotos, objetos de chocolate y todo lo que quieras</p>
-              </div>
-              <div class="card">
-                <div class="img"><img class="imagenes-main" src="imagenes/iconopedido.png" width="50px" alt="">
-                </div>
-                <span>Pedidos a domicilio</span>
-                <p class="job">Ofrecemos un servicio rápido y seguro para el transporte de nuestros productos al lugar que usted desee. También comercializamos productos por toda la provincia</p>
-              </div>
-        </div>
-        </section>
-        <section>
-            <div class="titulossecciones">
-                <h3>Comentarios de nuestros clientes</h3>
-            </div>
-        <div class="comentarios">
-            <div class="social-media">
-                <img width="50" height="50" class="imagencomentario" src="" />
-              
-                <div class="comentario">
-                  <p class="nombreusuario">Lucas</p>
-              
-                  <ul class="estrellas">
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <!--<li>&#9734;</li>-->
-                    <li><span class="fechacomentario--space">Hace 1 día</span></li>
-                  </ul>
-              
-                  <p class="textcomentario">
-                    El mejor pan que he probado hasta la fecha. Impresionante como lo traen calentito a casa.
-                  </p>
-                </div>
-              </div>
-              <div class="social-media">
-                <img width="50" height="50" class="imagencomentario" src="" />
-              
-                <div class="comentario">
-                  <p class="nombreusuario">Sara</p>
-              
-                  <ul class="estrellas">
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <!--<li>&#9734;</li>-->
-                    <li><span class="fechacomentario--space">Hace 3 días</span></li>
-                  </ul>
-              
-                  <p class="textcomentario">
-                    Muy profesionales, el pan espectacular en sabor y calidad.
-                  </p>
-                </div>
-              </div>
-              <div class="social-media">
-                <img width="50" height="50" class="imagencomentario" src="" />
-              
-                <div class="comentario">
-                  <p class="nombreusuario">Fernando</p>
-              
-                  <ul class="estrellas">
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <!--<li>&#9734;</li>-->
-                    <li><span class="fechacomentario--space">Hace 4 días</span></li>
-                  </ul>
-              
-                  <p class="textcomentario">
-                    Pedí una tarta de cumpleaños personalizada y no lo han podido hacer mejor. Sin duda pediré más para otros cumpleaños.
-                  </p>
-                </div>
-              </div>
-        </div>
-        <div class="comentarios">
-            <div class="social-media">
-                <img width="50" height="50" class="imagencomentario" src="" />
-              
-                <div class="comentario">
-                  <p class="nombreusuario">Silvia</p>
-              
-                  <ul class="estrellas">
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <!--<li>&#9734;</li>-->
-                    <li><span class="fechacomentario--space">Hace 6 días</span></li>
-                  </ul>
-              
-                  <p class="textcomentario">
-                    Lo traen más rápido de lo que pensaba a casa, llega el pan calentito y está delicioso.
-                  </p>
-                </div>
-              </div>
-              <div class="social-media">
-                <img width="50" height="50" class="imagencomentario" src="" />
-              
-                <div class="comentario">
-                  <p class="nombreusuario">Iván</p>
-              
-                  <ul class="estrellas">
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <!--<li>&#9734;</li>-->
-                    <li><span class="fechacomentario--space">Hace 1 sem</span></li>
-                  </ul>
-              
-                  <p class="textcomentario">
-                    El pan de cada día lo pido para que lo traigan a casa y llega siempre muy puntual. Me encanta!!
-                  </p>
-                </div>
-              </div>
-              <div class="social-media">
-                <img width="50" height="50" class="imagencomentario" src="" />
-              
-                <div class="comentario">
-                  <p class="nombreusuario">Esther</p>
-              
-                  <ul class="estrellas">
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <li>&#9733;</li>
-                    <!--<li>&#9734;</li>-->
-                    <li><span class="fechacomentario--space">Hace 2 sem</span></li>
-                  </ul>
-              
-                  <p class="textcomentario">
-                    Muy profesionales, fui por un dolor de espalda, a penas me podía mover y me dejaron súper bien. Repetiría y repetiré.
-                    Lo aconsejo.
-                  </p>
-                </div>
-              </div>
-              <br/>
-              <a class="vermas" href="#">Ver mas...</a>
-        </div>
-        
-        
-        
-        </section>
-    </main>
 
-    <footer>
-        <div class="piepagina">
-            <div class="seccionfooter">
-                <h3>Información</h3>
-                <a class="informacion" href="#">¿Quiénes somos?</a><br/>
-                <a class="informacion" href="#">Política de privacidad</a><br/>
-                <a class="informacion" href="#">Política de cookies</a><br/>
-                <a class="informacion" href="#">Condiciones legales</a><pr/>
-            </ul>
-            </div>
-            <div class="seccionfooter">
-                <h3>Haz tu pedido por telefono</h3>
-                <h2>612 345 678</h2>
-                <p>Horario de lunes a viernes de 8:00 a 21:00</p>
-            </div>
-            <div class="seccionfooter">
-                <h3>Síguenos en redes sociales</h3>
-                <span><a href="https://www.facebook.com/"><img class="imagenesfooter" src="imagenes/facebook.svg" alt=""></a></span>
-                <span><a href="https://www.instagram.com/"><img class="imagenesfooter" src="imagenes/instagram.png" alt=""></a></span>
-                <span><a href="www.whatsapp.com"><img class="imagenesfooter" src="imagenes/whatsapp.png" alt=""></a></span>
-                <span><a href="www.youtube.com"><img class="imagenesfooter" src="imagenes/youtube.png" alt=""></a></span>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panaderia</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-inicio.css">
+  <script>
+    const abrir_panel = () => {
+      const panel = document.querySelectorAll('.panel')[0].style;
+      panel.display = panel.display === 'none' ? 'block' : 'none';
+    };
+
+    const loadfn = () => {
+      const _nav = document.querySelector('nav').style;
+      window.addEventListener('scroll', (e) => {
+        if (window.scrollY > 10) {
+          _nav.backgroundColor = '#b08968';
+          _nav.boxShadow = '2px 2px 4px rgba(0, 0, 0, 0.5)';
+        } else {
+          _nav.backgroundColor = 'transparent';
+          _nav.boxShadow = 'none';
+        }
+      });
+    };
+  </script>
+</head>
+
+<body onload="loadfn()">
+  <div class="ancho">
+    <!--<div><img src="imagenes/logo.png" alt="logo" width="69rem"></div>-->
+    <div class="align-derecha">
+      <nav>
+        <div class="btn-container">
+          <button class="btn-menu"><a href="index.html">Inicio</a></button>
+          <button class="btn-menu"><a href="productos.html">Productos</a></button>
+          <button class="btn-menu"><a href="pedidos.html">Pedidos</a></button>
+          <button class="btn-iconos"><a href="#"><img class="imagenes-menu" src="imagenes/perfil.png"
+                alt="Perfil"></a></button>
+          <button class="btn-iconos" onclick="abrir_panel()"><a href="#"><img class="imagenes-menu"
+                src="imagenes/carrito.png" alt="Carrito"></a></button>
         </div>
-    </footer>
+        <div class="panel">
+          <div class="panel-carrito">
+            <ul class="shopping-cart-items">
+              <li>
+                <img src="imagenes/pan-rustico.jpg" alt="item1" />
+                <span class="item-name">Pan rustico</span>
+                <span class="item-price">2€</span>
+                <span class="item-quantity">Cantidad: 01</span>
+              </li>
+              <li>
+                <img src="imagenes/pan-rustico.jpg" alt="item1" />
+                <span class="item-name">Pan rustico</span>
+                <span class="item-price">2€</span>
+                <span class="item-quantity">Cantidad: 01</span>
+              </li>
+              <li>
+                <img src="imagenes/pan-rustico.jpg" alt="item1" />
+                <span class="item-name">Pan rustico</span>
+                <span class="item-price">2€</span>
+                <span class="item-quantity">Cantidad: 01</span>
+              </li>
+            </ul>
+          </div>
+          <div class="boton-comprar">
+            <button class="comprar"><a href="carrito.html"></a>
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text"><a href="carrito.html">Comprar</a></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <header>
+    <h1>Panadería Pedrín</h1>
+    <h3>El mejor pan en tu casa</h3>
+  </header>
+  <main>
+    <section>
+      <div class="titulossecciones">
+        <h3>¿Qué nos diferencia?</h3>
+      </div>
+      <div class="iconos-centrados">
+        <div class="card">
+          <div class="img"><img class="imagenes-main" src="imagenes/iconopan.png" width="50px" alt="Icono Pan">
+          </div>
+          <span>Innovación</span>
+          <p class="descripcion">Apostamos por la innovacion y el desarrollo de nuevos productos, diferenciales, que
+            destaquen tanto por su sabor y calidad como por su fórmula innovadora.</p>
+        </div>
+        <div class="card">
+          <div class="img"><img class="imagenes-main" src="imagenes/iconopersonalizacion.png" width="50px" alt="">
+          </div>
+          <span>Personalizacion</span>
+          <p class="descripcion">En nuestros establecimientos personalizamos cualquier tipo de dulce, sobretodo nuestras
+            tartas, en las que incluimmos nombres, fotos, objetos de chocolate y todo lo que quieras</p>
+        </div>
+        <div class="card">
+          <div class="img"><img class="imagenes-main" src="imagenes/iconopedido.png" width="50px" alt="">
+          </div>
+          <span>Pedidos a domicilio</span>
+          <p class="descripcion">Ofrecemos un servicio rápido y seguro para el transporte de nuestros productos al lugar
+            que usted desee. También comercializamos productos por toda la provincia</p>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <div class="titulossecciones">
+        <h3>Comentarios de nuestros clientes</h3>
+      </div>
+      <div class="comentarios">
+        <div class="social-media">
+          <img class="imagencomentario" src="/imagenes/perfil1.png" />
+
+          <div class="comentario">
+            <p class="nombreusuario">Lucas</p>
+
+            <ul class="estrellas">
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <!--<li>&#9734;</li>-->
+              <li><span class="fechacomentario--space">Hace 1 día</span></li>
+            </ul>
+
+            <p class="textcomentario">
+              El mejor pan que he probado hasta la fecha. Impresionante como lo traen calentito a casa.
+            </p>
+          </div>
+        </div>
+        <div class="social-media">
+          <img class="imagencomentario" src="/imagenes/perfil2.png" />
+
+          <div class="comentario">
+            <p class="nombreusuario">Sara</p>
+
+            <ul class="estrellas">
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <!--<li>&#9734;</li>-->
+              <li><span class="fechacomentario--space">Hace 3 días</span></li>
+            </ul>
+
+            <p class="textcomentario">
+              Muy profesionales, el pan espectacular en sabor y calidad.
+            </p>
+          </div>
+        </div>
+        <div class="social-media">
+          <img class="imagencomentario" src="/imagenes/perfil3.png" />
+
+          <div class="comentario">
+            <p class="nombreusuario">Fernando</p>
+
+            <ul class="estrellas">
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <!--<li>&#9734;</li>-->
+              <li><span class="fechacomentario--space">Hace 4 días</span></li>
+            </ul>
+
+            <p class="textcomentario">
+              Pedí una tarta de cumpleaños personalizada y no lo han podido hacer mejor. Sin duda pediré más para otros
+              cumpleaños.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="comentarios">
+        <div class="social-media">
+          <img class="imagencomentario" src="/imagenes/perfil4.png" />
+
+          <div class="comentario">
+            <p class="nombreusuario">Silvia</p>
+
+            <ul class="estrellas">
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <!--<li>&#9734;</li>-->
+              <li><span class="fechacomentario--space">Hace 6 días</span></li>
+            </ul>
+
+            <p class="textcomentario">
+              Lo traen más rápido de lo que pensaba a casa, llega el pan calentito y está delicioso.
+            </p>
+          </div>
+        </div>
+        <div class="social-media">
+          <img class="imagencomentario" src="/imagenes/perfil5.png" />
+
+          <div class="comentario">
+            <p class="nombreusuario">Iván</p>
+
+            <ul class="estrellas">
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <!--<li>&#9734;</li>-->
+              <li><span class="fechacomentario--space">Hace 1 sem</span></li>
+            </ul>
+
+            <p class="textcomentario">
+              El pan de cada día lo pido para que lo traigan a casa y llega siempre muy puntual. Me encanta!!
+            </p>
+          </div>
+        </div>
+        <div class="social-media">
+          <div>
+            <img class="imagencomentario" src="/imagenes/perfil6.png" />
+            <p class="nombreusuario">Esther</p>
+          </div>
+          <div class="comentario">
+            <ul class="estrellas">
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <li>&#9733;</li>
+              <!--<li>&#9734;</li>-->
+              <li><span class="fechacomentario--space">Hace 2 sem</span></li>
+            </ul>
+
+            <p class="textcomentario">
+              Muy profesionales, fui por un dolor de espalda, a penas me podía mover y me dejaron súper bien. Repetiría
+              y repetiré.
+              Lo aconsejo.
+            </p>
+          </div>
+        </div>
+        <br />
+        <button class="boton-ver-mas">Ver más...</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="piepagina">
+      <div class="seccionfooter">
+        <h3>Información</h3>
+        <a class="informacion" href="#">¿Quiénes somos?</a><br />
+        <a class="informacion" href="#">Política de privacidad</a><br />
+        <a class="informacion" href="#">Política de cookies</a><br />
+        <a class="informacion" href="#">Condiciones legales</a>
+        <pr />
+        </ul>
+      </div>
+      <div class="seccionfooter">
+        <h3>Haz tu pedido por telefono</h3>
+        <h2>612 345 678</h2>
+        <p>Horario de lunes a viernes de 8:00 a 21:00</p>
+      </div>
+      <div class="seccionfooter">
+        <h3>Síguenos en redes sociales</h3>
+        <span><a href="https://www.facebook.com/"><img class="imagenesfooter" src="imagenes/facebook.svg"
+              alt=""></a></span>
+        <span><a href="https://www.instagram.com/"><img class="imagenesfooter" src="imagenes/instagram.png"
+              alt=""></a></span>
+        <span><a href="www.whatsapp.com"><img class="imagenesfooter" src="imagenes/whatsapp.png" alt=""></a></span>
+        <span><a href="www.youtube.com"><img class="imagenesfooter" src="imagenes/youtube.png" alt=""></a></span>
+      </div>
+    </div>
+  </footer>
+
 </body>
+
 </html>

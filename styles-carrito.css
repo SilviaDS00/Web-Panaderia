@@ -1,130 +1,261 @@
-.tarjeta-producto{
-    width: 50%;
-    margin-left: 4.5rem;
-    padding: 2rem;
-    border: solid 1px #7f5539;
-    border-radius: 0.5rem;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Indie+Flower&family=Open+Sans&display=swap');
+
+.navegacion {
+  width: 100%;
+  height: 70px;
+  background-color: #b08968;
+  margin: auto;
+  transition-property: all;
+  transition-duration: 200ms;
 }
 
-.tarjeta-producto:hover{
-    border-color: #7f5539;
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+
+
+
+
+
+* {
+  margin-left: 10px;
+  list-style: none;
+  vertical-align: baseline;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.carrito div{
+  display: inline-block;
+}
+.productos{
+  width: 65%;
+  background-color: #da1226;
+}
+
+.pago{
+  width: 30%;
+  height: 50%;
+  background-color: #0F9E5E;
+  vertical-align: top;
+  margin-top: 1%;
+}
+
+.tarjeta-producto {
+  width: 98%;
+  height: auto;
+  display: block;
+}
+
+.tarjeta-producto ul {
+  list-style: none;
+  border: 1px solid #DDB892;
+  border-radius: 10px;
+  background-color: #fff;
+
+}
+
+.imagen {
+  width: 20%;
+  margin: 1em;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .imagen-producto{
-    width: 10rem;
-}
-
-.titulo-producto{
-    vertical-align: middle;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
-
-
-blockquote, q { quotes: none; }
-blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
-strong, b { font-weight: bold; }
-em, i { font-style: italic; }
-
-table { border-collapse: collapse; border-spacing: 0; }
-img { border: 0; max-width: 100%; }
-
-h1 {
-  font-family: 'Fredoka One', Helvetica, Tahoma, sans-serif;
-  color: #fff;
-  text-shadow: 1px 2px 0 #7184d8;
-  font-size: 3.5em;
-  line-height: 1.1em;
-  padding: 6px 0;
-  font-weight: normal;
-  text-align: center;
-}
-
-
-.page{
   width: 100%;
+  height: 10rem;
 }
 
-/** cart table **/
-#cart {
-  display: block;
-  border-collapse: collapse;
-  margin: 0;
+li.nombre-producto {
+  margin-left:0;
+  font-size: 1.5em;
+  color: #7f5539;
+  font-weight: 700;
+}
+
+.contenedor-nombre {
+  display: inline-block;
+  width: 20%;
+}
+
+.precio {
+  padding-left: 4rem;
+  padding-right: 10%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #7f5539;
+}
+
+.precio p {
+  margin-top: 1em;
+  color: #0F9E5E;
+}
+
+.boton-realizar-pedido {
   width: 100%;
-  font-size: 1.2em;
-  color: #444;
-}
-#cart thead th {
-  padding: 8px 0;
-  font-weight: bold;
-}
-
-#cart thead th.first {
-  width: 175px;
-}
-#cart thead th.second {
-  width: 45px;
-}
-#cart thead th.third {
-  width: 230px;
-}
-#cart thead th.fourth {
-  width: 130px;
-}
-#cart thead th.fifth {
-  width: 20px;
-}
-
-#cart tbody td {
-  text-align: center;
-  margin-top: 4px;
-}
-
-tr.productitm {
-  height: 65px;
-  line-height: 65px;
-  border-bottom: 1px solid #d7dbe0;
-}
-
-
-#cart tbody td img.thumb {
-  vertical-align: bottom;
-  border: 1px solid #ddd;
-  margin-bottom: 4px;
-}
-
-.qtyinput {
-  width: 33px;
-  height: 22px;
-  border: 1px solid #a3b8d3;
-  background: #dae4eb;
-  color: #616161;
-  text-align: center;
-}
-
-tr.totalprice, tr.extracosts {
-  height: 35px;
-  line-height: 35px;
-}
-tr.extracosts {
-  background: #e4edf4;
-}
-
-.remove {
-  /* http://findicons.com/icon/261449/trash_can?id=397422 */
-  cursor: pointer;
-  position: relative;
-  right: 12px;
-  top: 5px;
-}
-
-tr.checkoutrow {
-  background: #73716a;
-}
-td.checkout {
-  padding: 12px 0;
-  padding-top: 20px;
-  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 2em auto;
+  font-weight: 500;
+  color: #7f5539;
   text-align: right;
 }
+
+.boton-realizar-pedido button {
+  border-radius: 5px;
+  border: 1px solid #7f5539;
+  display: inline-block;
+  cursor: pointer;
+  color: #7f5539;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 10px 13px;
+  text-decoration: none;
+  margin: 0px 2.5em;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: all .2s ease;
+}
+
+.boton-realizar-pedido button:hover {
+  background-color: #7f5539;
+  color: #fff;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.boton-realizar-pedido button:after {
+  content: "\f055";
+  font-family: FontAwesome;
+  margin-left: 1em;
+}
+
+.cantidad {
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 6em auto;
+}
+
+
+
+.spinner input {
+  width: 3em;
+  height: 3em;
+  border: solid 1px #7f5539;
+  border-radius: 25%;
+  text-align: center;
+}
+
+.input-group-btn-vertical {
+  position: relative;
+  white-space: nowrap;
+  width: 1%;
+  vertical-align: middle;
+  display: inline-block;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+
+
+.input-group-btn-vertical > .btn:first-child {
+  border: none;
+  background-color: #7f5539;
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  padding: 1em;
+  margin-left: 0px;
+  position: relative;
+  border-radius: 4px 4px;
+  transition: all .2s ease;
+}
+
+.input-group-btn-vertical > .btn:last-child {
+  margin-top: -2px;
+  border: none;
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  padding: 1em;
+  margin-left: 0px;
+  position: relative;
+  border-radius: 4px 4px;
+  margin-top: 0.1em;
+  background-color: #7f5539;
+  transition: all .2s ease;
+}
+
+.input-group-btn-vertical > .btn:first-child:hover {
+  border: solid 1px #7f5539;
+  background-color: #fff;
+}
+
+.input-group-btn-vertical > .btn:last-child:hover {
+  border: solid 1px #7f5539;
+  background-color: #fff;
+}
+
+.input-group-btn-vertical i {
+  position: absolute;
+  top: 0.5em;
+  left: 0.7em;
+}
+
+
+.check-btn {
+  width: 11%;
+  display: inline-block;
+  margin: 7em 0.5em auto;
+  text-align: right;
+}
+
+.faf {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.4em;
+  text-rendering: auto;
+
+}
+
+.fa-check:hover {
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  color: #0F9E5E;
+  cursor: pointer;
+}
+
+.fa-times:hover {
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  color: #da1226;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
