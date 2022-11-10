@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Indie+Flower&family=Open+Sans&display=swap');
+
+* {
+    list-style: none;
+    vertical-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.div-producto{
+    margin: 0;
+    width: 65%;
+    vertical-align: middle;
+    position: relative;
+}
+.tarjeta-producto1{
+    width: 100%;
+    height: 10rem;
+    font-size: 1.5rem;
+    border: 1px solid #b08968;
+    border-radius: 10px;
+    vertical-align: middle;
+    display: flex;
+    position: relative;
+  }
+  
+.imagen1{
+    width: 20%;
+    position: absolute;
+      top: 50%;
+      margin-top: -55px;
+      margin-left: 1rem;
+}
+  
+  .imagen1 img{
+    width: 96%;
+    vertical-align: middle;
+    border-radius: 10px;
+  }
+  
+  .contenedor-nombre1{
+      width: 20%;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #7f5539;
+      position: absolute;
+      top: 50%;
+      margin-top: -25px;
+      margin-left: 22%;
+  }
+  
+  .precio2{
+    width: 20%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    margin-left: 44%;
+    
+  }
+  
+  .precio2 .titulo-precio{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #7f5539;
+  }
+  
+  .precio2 .euros{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #449441;
+  }
+  
+  .cantidad2{
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    color: #7f5539;
+    font-weight: 700;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    margin-left: 62%;
+  }
+  
+  .cantidad2 input{
+    width: 3em;
+    height: 3em;
+    border: solid 1px #7f5539;
+    border-radius: 25%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .btn-borrar {
+    width: 20%;
+    text-align: center;
+    color: #7f5539;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    margin-left: 80%;
+  }
+  
+  .faf {
+    font: 1rem/1 FontAwesome;
+    font-size: 1em;
+  }
+  
+  .fa-check:hover {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    color: #0F9E5E;
+    cursor: pointer;
+  }
+  
+  .fa-times:hover {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    color: #da1226;
+    cursor: pointer;
+  }

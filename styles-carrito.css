@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Indie+Flower&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Indie+Flower&family=Open+Sans&display=swap');
 
 .navegacion {
   width: 100%;
@@ -10,94 +11,155 @@
 }
 
 * {
-  margin-left: 10px;
   list-style: none;
-  vertical-align: baseline;
+  vertical-align: center;
   font-family: 'Open Sans', sans-serif;
+}
+
+.carrito {
+  width: 100%;
+  float: left;
 
 }
 
-.carrito div{
-  display: inline-block;
-}
-.productos{
-  width: 65%;
-  background-color: #ffffff;
+.productos {
+  width: 60%;
+  margin-left: 2rem;
 }
 
-.tarjeta-producto {
-  width: 99%;
-  background-color: #ffffff;
+.carrito .productos,
+.pago {
+  float: left;
 }
 
-.pago{
-  width: 30%;
-  height: 50%;
-  background-color: #0F9E5E;
-  vertical-align: top;
-  margin-top: 1%;
-}
 
-.tarjeta-producto {
-  width: 98%;
-  height: auto;
-  display: block;
-}
-
-.tarjeta-producto ul {
-  list-style: none;
-  border: 1px solid #DDB892;
-  border-radius: 10px;
-  background-color: #fff;
-
-}
-
-.imagen {
-  width: 20%;
-  margin: 1em;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.imagen-producto{
+.div-producto {
   width: 100%;
   height: 10rem;
+  font-size: 1.5rem;
+  border: 1px solid #b08968;
+  border-radius: 10px;
+  vertical-align: middle;
+  margin: 0;
+  position: relative;
+  margin-bottom: 1rem;
 }
 
-li.nombre-producto {
-  margin-left:0;
-  font-size: 1.5em;
+.imagen1 {
+  width: 20%;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translate(-5%, -50%);
+}
+
+.imagen1 img {
+  width: 96%;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+.contenedor-nombre1 {
+  width: 20%;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #7f5539;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(0, -50%);
+}
+
+.precio2 {
+  width: 20%;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(0, -50%);
+
+}
+
+.precio2 .titulo-precio {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #7f5539;
+}
+
+.precio2 .euros {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #449441;
+}
+
+.cantidad2 {
+  width: 20%;
+  text-align: center;
+  vertical-align: middle;
   color: #7f5539;
   font-weight: 700;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+  left: 63%;
+  transform: translate(0, -50%);
 }
 
-.contenedor-nombre {
-  display: inline-block;
-  width: 20%;
-}
-
-.precio {
-  padding-left: 4rem;
-  padding-right: 10%;
-  display: inline-block;
-  vertical-align: middle;
-
-  font-weight: 500;
-  font-size: 1.5em;
-  color: #7f5539;
+.cantidad2 input {
+  width: 3em;
+  height: 3em;
+  border: solid 1px #7f5539;
+  border-radius: 25%;
   text-align: center;
+  vertical-align: middle;
+}
 
-  text-align: left;
-  font-weight: 500;
-  font-size: 1.5em;
+.btn-borrar {
+  width: 20%;
+  text-align: center;
   color: #7f5539;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(0, -50%);
 }
 
-.precio p {
-  margin-top: 1em;
-  color: #0F9E5E;
-  text-align: left;
+.faf {
+  font: 1rem/1 FontAwesome;
+  font-size: 1em;
 }
+
+.fa-check:hover {
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  color: #0F9E5E;
+  cursor: pointer;
+}
+
+.fa-times:hover {
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  color: #da1226;
+  cursor: pointer;
+}
+
 
 .boton-realizar-pedido {
   width: 100%;
@@ -142,169 +204,56 @@ li.nombre-producto {
   margin-left: 1em;
 }
 
-.cantidad {
-  width: 10%;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 6em auto;
-  text-align: center;
-  color: #7f5539;
-}
-
-.spinner input {
-  width: 3em;
-  height: 3em;
-  border: solid 1px #7f5539;
-  border-radius: 25%;
-  text-align: center;
-}
-
-.input-group-btn-vertical {
-  position: relative;
-  white-space: nowrap;
-  width: 1%;
-  vertical-align: middle;
-  display: inline-block;
-  display: inline-block;
-  margin: 0 auto;
-}
-
-.input-group-btn-vertical > .btn:first-child {
-  border: none;
-  background-color: #7f5539;
-  display: block;
-  float: none;
-  width: 100%;
-  max-width: 100%;
-  padding: 1em;
-  margin-left: 0px;
-  position: relative;
-  border-radius: 4px 4px;
-  transition: all .2s ease;
-}
-
-.input-group-btn-vertical > .btn:last-child {
-  margin-top: -2px;
-  border: none;
-  display: block;
-  float: none;
-  width: 100%;
-  max-width: 100%;
-  padding: 1em;
-  margin-left: 0px;
-  position: relative;
-  border-radius: 4px 4px;
-  margin-top: 0.1em;
-  background-color: #7f5539;
-  transition: all .2s ease;
-}
-
-.input-group-btn-vertical > .btn:first-child:hover {
-  border: solid 1px #7f5539;
-  background-color: #fff;
-}
-
-.input-group-btn-vertical > .btn:last-child:hover {
-  border: solid 1px #7f5539;
-  background-color: #fff;
-}
-
-.input-group-btn-vertical i {
-  position: absolute;
-  top: 0.5em;
-  left: 0.7em;
-}
 
 
-.check-btn {
-  width: 11%;
-  display: inline-block;
-  margin: 7em 0.5em auto;
-  text-align: right;
-}
-
-.faf {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: 1.4em;
-  text-rendering: auto;
-
-}
-
-.fa-check:hover {
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  animation-duration: 0.5s;
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  color: #0F9E5E;
-  cursor: pointer;
-}
-
-.fa-times:hover {
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  animation-duration: 0.5s;
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  color: #da1226;
-  cursor: pointer;
-}
-
-.pago{
+.pago {
   width: 30%;
-  height: 20rem;
-  background-color: #0F9E5E;
+  height: 22rem;
+  top: 0;
+  margin-right: 2rem;
   vertical-align: top;
-  margin-top: 1%;
-  border: 1px solid #DDB892;
+  border: 1px solid #b08968;
   border-radius: 10px;
   background-color: #fff;
-  padding-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  float: right;
 
 }
 
-.pago h2{
+.pago h2 {
   color: #7f5539;
   text-align: center;
 }
 
-.resumen-centrado{
-  float: left;
-  width: 100%;
-}
-
-.subtotal{
+.subtotal {
   width: 100%;
   font-size: 1.5rem;
   width: 100%;
+  color: #7f5539;
 }
 
-.envio{
+.envio {
   padding-top: 5%;
   width: 100%;
+  color: #5f5f5f;
 }
 
-.total{
-width: 45%;
-font-size: 1.5rem;
+.total-alienado{
+  
 }
 
-.precio-total{
+.total {
+  width: 45%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #7f5539;
+}
+
+.precio-total {
   padding-top: 5%;
   width: 45%;
   font-size: 1.5rem;
   text-align: right;
+  float: right;
 }
-
-
