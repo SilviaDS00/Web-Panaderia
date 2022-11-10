@@ -164,12 +164,9 @@
 .boton-realizar-pedido {
   width: 100%;
   display: inline-block;
-  vertical-align: top;
   margin-top: 2rem;
-  margin: 2em auto;
-  font-weight: 500;
   color: #7f5539;
-  text-align: right;
+  text-align: center;
 }
 
 .boton-realizar-pedido button {
@@ -181,11 +178,8 @@
   font-family: Arial;
   font-size: 17px;
   padding: 10px 13px;
-
-  margin-right: 1rem;
   text-decoration: none;
   text-decoration: none;
-  margin: 0px 2.5em;
   border-radius: 20px;
   background-color: transparent;
   transition: all .2s ease;
@@ -203,8 +197,6 @@
   font-family: FontAwesome;
   margin-left: 1em;
 }
-
-
 
 .pago {
   width: 30%;
@@ -234,26 +226,123 @@
 }
 
 .envio {
-  padding-top: 5%;
+  padding-top: 2rem;
   width: 100%;
   color: #5f5f5f;
 }
 
-.total-alienado{
-  
+.total-alineado{
+  float: left;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .total {
-  width: 45%;
+  width: 40%;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 800;
   color: #7f5539;
+  position: absolute;
 }
 
 .precio-total {
-  padding-top: 5%;
-  width: 45%;
+  width: 40%;
   font-size: 1.5rem;
+  font-weight: 800;
   text-align: right;
   float: right;
+  color: #0F9E5E;
 }
+
+.boton{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: #b08968;
+  padding: 0;
+  
+ }
+ 
+ button.realizar-compra {
+  width: 14rem;
+  height: auto;
+ }
+ 
+ button.realizar-compra .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #7f5539;
+  border-radius: 1.625rem;
+ }
+ 
+ button.realizar-compra .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+ }
+ 
+ button.realizar-compra .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+ }
+ 
+ button.realizar-compra .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+ }
+ 
+ button.realizar-compra .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+ }
+ 
+ button:hover .circle {
+  width: 100%;
+ }
+ 
+ button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+ }
+ 
+ button:hover .button-text {
+  color: #fff;
+ }
