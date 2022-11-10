@@ -160,6 +160,10 @@ nav ul li a img:hover {
   position: absolute;
 }
 
+.precio-total{
+  color: #23211f;
+}
+
 .boton-comprar {
   text-align: center;
 }

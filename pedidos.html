@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panaderia</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-pedido.css">
     <script>
         const abrir_panel = () => {
           const panel = document.querySelectorAll('.panel')[0].style;
@@ -51,16 +52,16 @@
                         <span class="item-quantity">Cantidad: 01</span>
                       </li>
                       <li>
-                        <img src="imagenes/pan-rustico.jpg" alt="item1" />
-                        <span class="item-name">Pan rustico</span>
-                        <span class="item-price">2€</span>
+                        <img src="imagenes/pan-de-ciabatta.jpg" alt="item1" />
+                        <span class="item-name">Pan candeal de picos</span>
+                        <span class="item-price">1,75€</span>
                         <span class="item-quantity">Cantidad: 01</span>
                       </li>
                       <li>
-                        <img src="imagenes/pan-rustico.jpg" alt="item1" />
-                        <span class="item-name">Pan rustico</span>
-                        <span class="item-price">2€</span>
-                        <span class="item-quantity">Cantidad: 01</span>
+                        <img src="imagenes/bollo-suizo.jpg" alt="item1" />
+                        <span class="item-name">Bollitos suizos</span>
+                        <span class="item-price">3€</span>
+                        <span class="item-quantity">Cantidad: 5</span>
                       </li>
                     </ul>
                   </div>
@@ -83,7 +84,47 @@
     </header>
 
     <main>
+      <div class="titulossecciones">
+        <h3>Realizar pedido especial</h3>
+      </div>
 
+      <form action="">
+        <fieldset>
+          <div class="input-group">
+            <input required="" type="text" name="text" autocomplete="off" class="input">
+            <label class="user-label">Nombre</label>
+          </div>
+
+          <div class="input-group">
+            <input required="" type="text" name="text" autocomplete="off" class="input">
+            <label class="user-label">Apellidos</label>
+          </div>
+
+          <div class="input-group">
+            <input required="" type="text" name="text" autocomplete="off" class="input">
+            <label class="user-label">Detalles del pedido</label>
+          </div>
+
+        <div class="input-group">
+          <input required="" type="text" name="text" autocomplete="off" class="input">
+          <label class="user-label">Alergenos</label>
+        </div>
+        
+        <div class="input-group">
+          <input required="" type="number" name="text" autocomplete="off" class="input">
+          <label class="user-label">Cantidad</label>
+        </div>
+        <div class="input-group">
+          <label for="fecha">Fecha de entrega</label>
+          <input type="date">
+        </div>
+
+          <p for="horario">Horario de entrega</p>
+          <input type="time" name="" id="">
+
+          <button>Agregar al carrito</button>
+        </fieldset>
+      </form>
 
     </main>
 
