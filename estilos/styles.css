@@ -2,7 +2,7 @@
 
 /*--Inicio Cabecera con imagen, titulo y eslogan--*/
 header {
-  background-image: url(imagenes/fondopan.png);
+  background-image: url(../imagenes/fondopan.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;

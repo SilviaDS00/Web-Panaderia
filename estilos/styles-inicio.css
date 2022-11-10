@@ -15,7 +15,7 @@
     height: 300px;
     background: #ffffff;
     border-radius: 10%;
-    border: 2px solid #DDB892;
+    border: 2px solid #b08968;
     transition: 200ms ease-out;
     overflow: visible;
     padding: 4%;
@@ -89,7 +89,7 @@
     list-style: none;
     width: 28%;
     font-size: 13px;
-    border: 2px solid #e6ccb2;
+    border: 2px solid #b08968;
     border-radius: 2%;
     transition: 200ms ease-out;
     overflow: visible;

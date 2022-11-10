@@ -2,176 +2,189 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panaderia</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles-pedido.css">
-    <script>
-        const abrir_panel = () => {
-          const panel = document.querySelectorAll('.panel')[0].style;
-          panel.display = panel.display === 'none' ? 'block' : 'none';
-        };
-  
-        const loadfn = () => {
-          const _nav = document.querySelector('nav').style;
-          window.addEventListener('scroll', (e) => {
-            if (window.scrollY > 10) {
-              _nav.backgroundColor = '#b08968';
-              _nav.boxShadow = '2px 2px 4px rgba(0, 0, 0, 0.5)';
-            } else {
-              _nav.backgroundColor = 'transparent';
-              _nav.boxShadow = 'none';
-            }
-          });
-        };
-      </script>
-    </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panaderia</title>
+  <link rel="stylesheet" href="estilos/styles.css">
+  <link rel="stylesheet" href="estilos/styles-pedido.css">
+  <script>
+    const abrir_panel = () => {
+      const panel = document.querySelectorAll('.panel')[0].style;
+      panel.display = panel.display === 'none' ? 'block' : 'none';
+    };
+
+    const loadfn = () => {
+      const _nav = document.querySelector('nav').style;
+      window.addEventListener('scroll', (e) => {
+        if (window.scrollY > 10) {
+          _nav.backgroundColor = '#b08968';
+          _nav.boxShadow = '2px 2px 4px rgba(0, 0, 0, 0.5)';
+        } else {
+          _nav.backgroundColor = 'transparent';
+          _nav.boxShadow = 'none';
+        }
+      });
+    };
+  </script>
+  </script>
 </head>
 
-<body onload="loadfn()"> 
-    <div class="ancho">
-        <!--<div><img src="imagenes/logo.png" alt="logo" width="69rem"></div>-->
-        <div class="align-derecha">
-            <nav>
-                <div class="btn-container">
-                    <button class="btn-menu"><a href="index.html">Inicio</a></button>
-                    <button class="btn-menu"><a href="productos.html">Productos</a></button>
-                    <button class="btn-menu"><a href="pedidos.html">Pedidos</a></button>
-                    <button class="btn-iconos"><a  href="#"><img class="imagenes-menu" src="imagenes/perfil.png" alt="Perfil"></a></button>
-                    <button class="btn-iconos" onclick="abrir_panel()"><a href="#"><img class="imagenes-menu" src="imagenes/carrito.png" alt="Carrito"></a></button>
-                </div>
-                <div class="panel">
-                  <div class="panel-carrito">
-                    <ul class="shopping-cart-items">
-                      <li>
-                        <img src="imagenes/pan-rustico.jpg" alt="item1" />
-                        <span class="item-name">Pan rustico</span>
-                        <span class="item-price">2€</span>
-                        <span class="item-quantity">Cantidad: 01</span>
-                      </li>
-                      <li>
-                        <img src="imagenes/pan-de-ciabatta.jpg" alt="item1" />
-                        <span class="item-name">Pan candeal de picos</span>
-                        <span class="item-price">1,75€</span>
-                        <span class="item-quantity">Cantidad: 01</span>
-                      </li>
-                      <li>
-                        <img src="imagenes/bollo-suizo.jpg" alt="item1" />
-                        <span class="item-name">Bollitos suizos</span>
-                        <span class="item-price">3€</span>
-                        <span class="item-quantity">Cantidad: 8</span>
-                      </li>
-                      <li>
-                        <img src="imagenes/pan-de-ajo.jpg" alt="item1" />
-                        <span class="item-name">Pan de ajo</span>
-                        <span class="item-price">3€</span>
-                        <span class="item-quantity">Cantidad: 4</span>
-                      </li>
-                      <li>
-                        <img src="imagenes/napolitana-choco.jpg" alt="item1" />
-                        <span class="item-name">Napolitana chocolate</span>
-                        <span class="item-price">3€</span>
-                        <span class="item-quantity">Cantidad: 2</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="boton-comprar">
-                    <button class="comprar"><a href="carrito.html"></a>
-                      <span class="circle" aria-hidden="true">
-        
-                      <span class="icon arrow"></span>
-        
-                        <span class="icon arrow"></span>
-                      </span>
-                      <span class="button-text"><a href="carrito.html">Comprar</a></span>
-                    </button>
-                  </div>
-                </div>
-            </nav>
+<body onload="loadfn()">
+  <div class="ancho">
+    <!--<div><img src="imagenes/logo.png" alt="logo" width="69rem"></div>-->
+    <div class="align-derecha">
+      <nav>
+        <div class="btn-container">
+          <button class="btn-menu"><a href="index.html">Inicio</a></button>
+          <button class="btn-menu"><a href="productos.html">Productos</a></button>
+          <button class="btn-menu"><a href="pedidos.html">Pedidos</a></button>
+          <button class="btn-iconos"><a href="#"><img class="imagenes-menu" src="imagenes/perfil.png"
+                alt="Perfil"></a></button>
+          <button class="btn-iconos" onclick="abrir_panel()"><a href="#"><img class="imagenes-menu"
+                src="imagenes/carrito.png" alt="Carrito"></a></button>
         </div>
+        <div class="panel">
+          <div class="panel-carrito">
+            <ul class="shopping-cart-items">
+              <li>
+                <img src="imagenes/pan-rustico.jpg" alt="item1" />
+                <span class="item-name">Pan rustico</span>
+                <span class="item-price">2€</span>
+                <span class="item-quantity">Cantidad: 01</span>
+              </li>
+              <li>
+                <img src="imagenes/pan-de-ciabatta.jpg" alt="item1" />
+                <span class="item-name">Pan candeal de picos</span>
+                <span class="item-price">1,75€</span>
+                <span class="item-quantity">Cantidad: 01</span>
+              </li>
+              <li>
+                <img src="imagenes/bollo-suizo.jpg" alt="item1" />
+                <span class="item-name">Bollitos suizos</span>
+                <span class="item-price">3€</span>
+                <span class="item-quantity">Cantidad: 8</span>
+              </li>
+              <li>
+                <img src="imagenes/pan-de-ajo.jpg" alt="item1" />
+                <span class="item-name">Pan de ajo</span>
+                <span class="item-price">3€</span>
+                <span class="item-quantity">Cantidad: 4</span>
+              </li>
+              <li>
+                <img src="imagenes/napolitana-choco.jpg" alt="item1" />
+                <span class="item-name">Napolitana chocolate</span>
+                <span class="item-price">3€</span>
+                <span class="item-quantity">Cantidad: 2</span>
+              </li>
+            </ul>
+          </div>
+          <div class="boton-comprar">
+            <button class="comprar"><a href="carrito.html"></a>
+              <span class="circle" aria-hidden="true">
+
+                <span class="icon arrow"></span>
+
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text"><a href="carrito.html">Comprar</a></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <header>
+    <h1>Panadería Pedrín</h1>
+    <h3>El mejor pan en tu casa</h3>
+  </header>
+
+  <main>
+    <div class="titulossecciones">
+      <h3>Realizar pedido especial</h3>
     </div>
 
-    <header>
-        <h1>Panadería Pedrín</h1>
-        <h3>El mejor pan en tu casa</h3>
-    </header>
-
-    <main>
-      <div class="titulossecciones">
-        <h3>Realizar pedido especial</h3>
-      </div>
-
-      <form action="">
-        <fieldset>
-          <div class="input-group">
-            <input required="" type="text" name="text" autocomplete="off" class="input">
-            <label class="user-label">Nombre</label>
-          </div>
-
-          <div class="input-group">
-            <input required="" type="text" name="text" autocomplete="off" class="input">
-            <label class="user-label">Apellidos</label>
-          </div>
-
-          <div class="input-group">
-            <input required="" type="text" name="text" autocomplete="off" class="input">
-            <label class="user-label">Detalles del pedido</label>
-          </div>
+    <form action="">
+      <fieldset>
+        <div class="input-group">
+          <input required="" type="text" name="text" autocomplete="off" class="input">
+          <label class="user-label">Nombre</label>
+        </div>
 
         <div class="input-group">
           <input required="" type="text" name="text" autocomplete="off" class="input">
-          <label class="user-label">Alergenos</label>
+          <label class="user-label">Apellidos</label>
         </div>
-        
+
+        <div class="input-group">
+          <textarea class="areatexto" placeholder="Descripción del pedido" name="descripcion" id="" cols="10" rows="10"></textarea>
+        </div>
+
+        <div class="input-group">
+          <input required="" type="text" name="text" autocomplete="off" class="input">
+          <label class="user-label">Alérgenos</label>
+        </div>
+
         <div class="input-group">
           <input required="" type="number" name="text" autocomplete="off" class="input">
           <label class="user-label">Cantidad</label>
         </div>
-        <div class="input-group">
-          <label for="fecha">Fecha de entrega</label>
-          <input type="date">
+
+        <div class="fechayhora">
+          <div class="input-group">
+            <div class="fechaentrega">Fecha de entrega:</div>
+            <input type="date">
+          </div>
+
+          <div class="input-group">
+            <div class="horario">
+              <div for="horario">Horario de entrega</div>
+              <input type="time" name="" id="">
+            </div>
+          </div>
         </div>
 
-          <p for="horario">Horario de entrega</p>
-          <input type="time" name="" id="">
+        <div class="boton">
+          <button class="realizar-compra">
+              <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Añadir al carrito</span>
+          </button>
+      </div>
+      </fieldset>
+    </form>
 
-          <button>Agregar al carrito</button>
-        </fieldset>
-      </form>
+  </main>
 
-    </main>
-
-    <footer>
-        <div class="piepagina">
-            <div class="seccionfooter">
-                <h3>Información</h3>
-                <a class="informacion" href="#">¿Quiénes somos?</a><br />
-                <a class="informacion" href="#">Política de privacidad</a><br />
-                <a class="informacion" href="#">Política de cookies</a><br />
-                <a class="informacion" href="#">Condiciones legales</a>
-                <pr />
-                </ul>
-            </div>
-            <div class="seccionfooter">
-                <h3>Haz tu pedido por telefono</h3>
-                <h2>612 345 678</h2>
-                <p>Horario de lunes a viernes de 8:00 a 21:00</p>
-            </div>
-            <div class="seccionfooter">
-                <h3>Síguenos en redes sociales</h3>
-                <span><a href="https://www.facebook.com/"><img class="imagenesfooter" src="imagenes/facebook.svg"
-                            alt=""></a></span>
-                <span><a href="https://www.instagram.com/"><img class="imagenesfooter" src="imagenes/instagram.png"
-                            alt=""></a></span>
-                <span><a href="www.whatsapp.com"><img class="imagenesfooter" src="imagenes/whatsapp.png"
-                            alt=""></a></span>
-                <span><a href="www.youtube.com"><img class="imagenesfooter" src="imagenes/youtube.png"
-                            alt=""></a></span>
-            </div>
-        </div>
-    </footer>
+  <footer>
+    <div class="piepagina">
+      <div class="seccionfooter">
+        <h3>Información</h3>
+        <a class="informacion" href="#">¿Quiénes somos?</a><br />
+        <a class="informacion" href="#">Política de privacidad</a><br />
+        <a class="informacion" href="#">Política de cookies</a><br />
+        <a class="informacion" href="#">Condiciones legales</a>
+        <pr />
+        </ul>
+      </div>
+      <div class="seccionfooter">
+        <h3>Haz tu pedido por telefono</h3>
+        <h2>612 345 678</h2>
+        <p>Horario de lunes a viernes de 8:00 a 21:00</p>
+      </div>
+      <div class="seccionfooter">
+        <h3>Síguenos en redes sociales</h3>
+        <span><a href="https://www.facebook.com/"><img class="imagenesfooter" src="imagenes/facebook.svg"
+              alt=""></a></span>
+        <span><a href="https://www.instagram.com/"><img class="imagenesfooter" src="imagenes/instagram.png"
+              alt=""></a></span>
+        <span><a href="www.whatsapp.com"><img class="imagenesfooter" src="imagenes/whatsapp.png" alt=""></a></span>
+        <span><a href="www.youtube.com"><img class="imagenesfooter" src="imagenes/youtube.png" alt=""></a></span>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
