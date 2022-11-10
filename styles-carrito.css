@@ -9,11 +9,6 @@
   transition-duration: 200ms;
 }
 
-
-
-
-
-
 * {
   margin-left: 10px;
   list-style: none;
@@ -30,10 +25,21 @@
   background-color: #ffffff;
 }
 
-
-
 .tarjeta-producto {
   width: 99%;
+  background-color: #da1226;
+}
+
+.pago{
+  width: 30%;
+  height: 50%;
+  background-color: #0F9E5E;
+  vertical-align: top;
+  margin-top: 1%;
+}
+
+.tarjeta-producto {
+  width: 98%;
   height: auto;
   display: block;
 }
@@ -75,10 +81,16 @@ li.nombre-producto {
   padding-right: 10%;
   display: inline-block;
   vertical-align: middle;
+
   font-weight: 500;
   font-size: 1.5em;
   color: #7f5539;
   text-align: center;
+
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #7f5539;
 }
 
 .precio p {
@@ -92,6 +104,7 @@ li.nombre-producto {
   display: inline-block;
   vertical-align: top;
   margin-top: 2rem;
+  margin: 2em auto;
   font-weight: 500;
   color: #7f5539;
   text-align: right;
@@ -106,8 +119,11 @@ li.nombre-producto {
   font-family: Arial;
   font-size: 17px;
   padding: 10px 13px;
+
   margin-right: 1rem;
   text-decoration: none;
+  text-decoration: none;
+  margin: 0px 2.5em;
   border-radius: 20px;
   background-color: transparent;
   transition: all .2s ease;
@@ -152,8 +168,6 @@ li.nombre-producto {
   display: inline-block;
   margin: 0 auto;
 }
-
-
 
 .input-group-btn-vertical > .btn:first-child {
   border: none;
@@ -292,4 +306,5 @@ font-size: 1.5rem;
   font-size: 1.5rem;
   text-align: right;
 }
+
 
