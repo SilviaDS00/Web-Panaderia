@@ -4,6 +4,12 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.div-info{
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
 form {
     width: 100%
 }
