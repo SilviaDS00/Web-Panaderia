@@ -29,7 +29,6 @@ form fieldset {
 }
 
 .input {
-    position: relative;
     margin-top: 2%;
 }
 
@@ -40,22 +39,17 @@ form fieldset {
     background: none;
     padding: 1rem;
     font-size: 1rem;
+    color: #7f5539;
+    font-family: 'Open Sans', sans-serif;
     transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.estilo-label {
-    position: absolute;
-    left: 2.2rem;
-    color: #b08968;
-    pointer-events: none;
-    transform: translateY(1rem);
-    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .estilo-input:focus,
 input:valid {
     outline: none;
     border: 1.5px solid #7f5539;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .estilo-input:focus~label,
@@ -163,7 +157,8 @@ input[type="time"]:focus {
     padding-bottom: 2rem;
 }
 
-button {
+.realizar-compra {
+    position: relative;
     display: inline-block;
     cursor: pointer;
     outline: none;

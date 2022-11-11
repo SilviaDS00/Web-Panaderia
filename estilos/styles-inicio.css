@@ -10,89 +10,55 @@
 }
 
 /*Tarjetas de nuestros servicios*/
-
-.flip {
-  border: #b08968 1px solid;
-  border-radius: 2.5rem;
+.card {
   width: 250px;
   height: 300px;
-  box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
-  padding: 2em;
-  transform-style: preserve-3d;
-  transition: 1s ease;
+  background: #ffffff;
+  border-radius: 10%;
+  border: 2px solid #b08968;
+  transition: 200ms ease-out;
+  overflow: visible;
+  padding: 4%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.card:hover {
+  border-color: #7f5539;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
-.flip:hover {
-  transform: rotateY(180deg);
-}
-/* Content */
-.flip .content {
-  transform-style: preserve-3d;
-}
-
-.flip .back, .flip .front {
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
+.card span {
+  font-weight: 600;
+  color: #7f5539;
+  text-align: center;
+  display: block;
+  padding-top: 15%;
+  font-size: 20px;
+  text-transform: uppercase;
+}  
+  
+  .card .descripcion {
+  font-weight: 400;
+  color: rgb(0, 0, 0);
   display: flex;
-  flex-direction: column;
   text-align: center;
+  font-size: 16px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-.flip .back {
-  transform: rotateY(180deg);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.imagenes-main {
+  width: 80px;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 4px;
 }
 
-.flip h2,
-.flip p {
-  transform: translateZ(90px);
-  text-align: center;
-}
-
-.iconos-inicio{
-  transform: translateZ(90px);
-  text-align: center;
-  width: 8rem;
-}
-
-.flip h2 {
-  font-size: 2rem;
-  color: #b08968;
-  text-align: center;
-}
-
-.flip p {
-  font-size: 1.1em;
-  color: #ffffff;
-  line-height: 1.6em;
-}
-
-.flip::before,
-.flip::after {
-  border-radius: 2.5rem;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  background-image: linear-gradient(#b08968, #b08968);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: rotateY(180deg)translateZ(1px);
-}
-
-.flip::before {
-  transform: none;
-  background-image: linear-gradient(#ffffff, #ffffff);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.card .img {
+  width: 100px;
+  height: 100px;
+  background: #DDB892;
+  border-radius: 15px;
+  margin: auto;
 }
 
 .tarjetas-centradas {
@@ -122,7 +88,7 @@
   list-style: none;
   width: 28%;
   font-size: 13px;
-  border: 1px solid #b08968;
+  border: 2px solid #b08968;
   border-radius: 2%;
   transition: 200ms ease-out;
   overflow: visible;
@@ -130,7 +96,7 @@
 }
 
 .social-media:hover {
-  border: 1px solid #7f5539;
+  border: 2px solid #7f5539;
 }
 
 .imagencomentario {
@@ -199,4 +165,3 @@
 .boton-ver-mas:active {
   transform: translateY(-1px);
 }
-
