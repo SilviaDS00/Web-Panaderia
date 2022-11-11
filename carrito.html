@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <script>
         const abrir_panel = () => {
-            const panel = document.querySelectorAll('.panel')[0].style;
+            const panel = document.querySelectorAll('.panel-carrito')[0].style;
             panel.display = panel.display === 'none' ? 'block' : 'none';
         };
 
@@ -46,52 +46,51 @@
                     <button class="btn-iconos" onclick="abrir_panel()"><a href="#"><img class="imagenes-menu"
                                 src="imagenes/carrito.png" alt="Carrito"></a></button>
                 </div>
-                <div class="panel">
-                    <div class="panel-carrito">
-                      <ul class="shopping-cart-items">
-                        <li>
-                          <img src="imagenes/pan-rustico.jpg" alt="item1" />
-                          <span class="item-name">Pan rustico</span>
-                          <span class="item-price">2€</span>
-                          <span class="item-quantity">Cantidad: 01</span>
-                        </li>
-                        <li>
-                          <img src="imagenes/pan-de-ciabatta.jpg" alt="item1" />
-                          <span class="item-name">Pan candeal de picos</span>
-                          <span class="item-price">1,75€</span>
-                          <span class="item-quantity">Cantidad: 01</span>
-                        </li>
-                        <li>
-                          <img src="imagenes/bollo-suizo.jpg" alt="item1" />
-                          <span class="item-name">Bollitos suizos</span>
-                          <span class="item-price">3€</span>
-                          <span class="item-quantity">Cantidad: 8</span>
-                        </li>
-                        <li>
-                          <img src="imagenes/pan-de-ajo.jpg" alt="item1" />
-                          <span class="item-name">Pan de ajo</span>
-                          <span class="item-price">3€</span>
-                          <span class="item-quantity">Cantidad: 4</span>
-                        </li>
-                        <li>
-                          <img src="imagenes/napolitana-choco.jpg" alt="item1" />
-                          <span class="item-name">Napolitana chocolate</span>
-                          <span class="item-price">3€</span>
-                          <span class="item-quantity">Cantidad: 2</span>
-                        </li>
-                      </ul>
-                    </div>
+                <div class="panel-carrito">
+                    <ul class="items-carrito">
+                      <li>
+                        <img src="imagenes/pan-rustico.jpg" alt="item1" />
+                        <span class="item-nombre-producto">Pan rustico</span>
+                        <span class="item-precio">2€</span>
+                        <span class="item-cantidad">Cantidad: 01</span>
+                      </li>
+                      <li>
+                        <img src="imagenes/pan-de-ciabatta.jpg" alt="item1" />
+                        <span class="item-nombre-producto">Pan candeal de picos</span>
+                        <span class="item-precio">1,75€</span>
+                        <span class="item-cantidad">Cantidad: 01</span>
+                      </li>
+                      <li>
+                        <img src="imagenes/bollo-suizo.jpg" alt="item1" />
+                        <span class="item-nombre-producto">Bollitos suizos</span>
+                        <span class="item-precio">3€</span>
+                        <span class="item-cantidad">Cantidad: 8</span>
+                      </li>
+                      <li>
+                        <img src="imagenes/pan-de-ajo.jpg" alt="item1" />
+                        <span class="item-nombre-producto">Pan de ajo</span>
+                        <span class="item-precio">3€</span>
+                        <span class="item-cantidad">Cantidad: 4</span>
+                      </li>
+                      <li>
+                        <img src="imagenes/napolitana-choco.jpg" alt="item1" />
+                        <span class="item-nombre-producto">Napolitana chocolate</span>
+                        <span class="item-precio">3€</span>
+                        <span class="item-cantidad">Cantidad: 2</span>
+                      </li>
+                    </ul>
                     <div class="boton-comprar">
                       <button class="comprar"><a href="carrito.html"></a>
                         <span class="circle" aria-hidden="true">
           
-                        <span class="icon arrow"></span>
+                          <span class="icon arrow"></span>
           
                           <span class="icon arrow"></span>
                         </span>
                         <span class="button-text"><a href="carrito.html">Comprar</a></span>
                       </button>
                     </div>
+          
                   </div>
             </nav>
         </div>
@@ -244,7 +243,41 @@
             </div>
         </div>
     </main>
-    
+    <footer>
+        <div class="piepagina">
+          <div class="seccionfooter">
+            <h3>Información</h3>
+            <a class="informacion" href="#">¿Quiénes somos?</a><br />
+            <a class="informacion" href="/politicas/privacidad.html">Política de privacidad</a><br />
+            <a class="informacion" href="/politicas/cookies.html">Política de cookies</a><br />
+            <a class="informacion" href="#">Condiciones legales</a>
+            <pr />
+            </ul>
+          </div>
+          <div class="seccionfooter">
+            <h3>Haz tu pedido por telefono</h3>
+            <h2>612 345 678</h2>
+            <p>Horario de lunes a viernes de 8:00 a 21:00</p>
+          </div>
+          <div class="seccionfooter">
+            <h3>Síguenos en redes sociales</h3>
+            <span><a href="https://www.facebook.com/"><img class="imagenesfooter" src="imagenes/facebook.svg"
+                  alt=""></a></span>
+            <span><a href="https://www.instagram.com/"><img class="imagenesfooter" src="imagenes/instagram.png"
+                  alt=""></a></span>
+            <span><a href="www.whatsapp.com"><img class="imagenesfooter" src="imagenes/whatsapp.png" alt=""></a></span>
+            <span><a href="www.youtube.com"><img class="imagenesfooter" src="imagenes/youtube.png" alt=""></a></span>
+          </div>
+          <center>
+            <p>
+              <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                  alt="¡CSS Válido!" />
+              </a>
+            </p>
+          </center>
+        </div>
+      </footer>
 </body>
 
 </html>

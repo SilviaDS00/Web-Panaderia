@@ -1,168 +1,202 @@
-  .iconos-centrados {
-    padding-top: 2%;
-    text-align: center;
-    padding-bottom: 3%;
-  }
-  
-  .iconos-centrados div {
-    display: inline-block;
-    margin: 0 2%;
-  }
-  
-  /*Tarjetas de nuestros servicios*/
-  .card {
-    width: 250px;
-    height: 300px;
-    background: #ffffff;
-    border-radius: 10%;
-    border: 2px solid #b08968;
-    transition: 200ms ease-out;
-    overflow: visible;
-    padding: 4%;
-  }
-  
-  .card:hover {
-    border-color: #7f5539;
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-  }
-  
-  .card span {
-    font-weight: 600;
-    color: #7f5539;
-    text-align: center;
-    display: block;
-    padding-top: 15%;
-    font-size: 20px;
-    text-transform: uppercase;
-  }  
-    
-    .card .descripcion {
-    font-weight: 400;
-    color: rgb(0, 0, 0);
-    display: flex;
-    text-align: center;
-    font-size: 16px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 9%;
-  }
-  
-  .imagenes-main {
-    width: 80px;
-    align-items: center;
-    margin-top: 10px;
-    margin-left: 4px;
-  }
-  
-  .card .img {
-    width: 100px;
-    height: 100px;
-    background: #DDB892;
-    border-radius: 15px;
-    margin: auto;
-  }
+.iconos-centrados {
+  padding-top: 2%;
+  text-align: center;
+  padding-bottom: 3%;
+}
 
-  .tarjetas-centradas {
-    float: left;
-  }
-  
-  /*Comentarios de la web*/
-  .comentarios {
-    padding-left: 10%;
-    padding-right: 10%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-  
-  .comentarios div {
-    display: inline-block;
-    align-items: center;
-  }
-  
-  .social-media {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 2px;
-    padding: 2%;
-    list-style: none;
-    width: 28%;
-    font-size: 13px;
-    border: 2px solid #b08968;
-    border-radius: 2%;
-    transition: 200ms ease-out;
-    overflow: visible;
-  
-  }
-  
-  .social-media:hover {
-    border: 2px solid #7f5539;
-  }
-  
-  .imagencomentario {
-    display: block;
-    width: 50px;
-    margin-right: 12px;
-  }
-  
-  .comentario {
-    align-items: flex-start;
-  }
-  
-  .nombreusuario {
-    margin: 0;
-    font-size: 15px;
-  }
-  
-  .fechacomentario {
-    margin: 0;
-    color: grey;
-  }
-  
-  .fechacomentario--space {
-    display: block;
-    padding-left: 4px;
-    color: grey;
-  }
-  
-  .estrellas {
-    display: flex;
-    margin: 8px 0 0;
-    padding: 0;
-    list-style: none;
-    color: #EB6E00;
-  }
-  
-  .textcomentario {
-    margin: 0;
-    font-size: 13px;
-  }
+.iconos-centrados div {
+  display: inline-block;
+  margin: 0 2%;
+}
 
-  .boton-ver-mas {
-    margin-top: 1%;
-    padding: 1.3em 3em;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #000;
-    background-color: #e6ccb2;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  .boton-ver-mas:hover {
-    background-color: #7f5539;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
-    color: #fff;
-    transform: translateY(-7px);
-  }
-  
-  .boton-ver-mas:active {
-    transform: translateY(-1px);
-  }
+/*Tarjetas de nuestros servicios*/
+
+.flip {
+  border: #b08968 1px solid;
+  border-radius: 2.5rem;
+  width: 250px;
+  height: 300px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+  padding: 2em;
+  transform-style: preserve-3d;
+  transition: 1s ease;
+}
+
+.flip:hover {
+  transform: rotateY(180deg);
+}
+/* Content */
+.flip .content {
+  transform-style: preserve-3d;
+}
+
+.flip .back, .flip .front {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.flip .back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.flip h2,
+.flip p {
+  transform: translateZ(90px);
+  text-align: center;
+}
+
+.iconos-inicio{
+  transform: translateZ(90px);
+  text-align: center;
+  width: 8rem;
+}
+
+.flip h2 {
+  font-size: 2rem;
+  color: #b08968;
+  text-align: center;
+}
+
+.flip p {
+  font-size: 1.1em;
+  color: #ffffff;
+  line-height: 1.6em;
+}
+
+.flip::before,
+.flip::after {
+  border-radius: 2.5rem;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: linear-gradient(#b08968, #b08968);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateY(180deg)translateZ(1px);
+}
+
+.flip::before {
+  transform: none;
+  background-image: linear-gradient(#ffffff, #ffffff);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tarjetas-centradas {
+  float: left;
+}
+
+/*Comentarios de la web*/
+.comentarios {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.comentarios div {
+  display: inline-block;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2px;
+  padding: 2%;
+  list-style: none;
+  width: 28%;
+  font-size: 13px;
+  border: 1px solid #b08968;
+  border-radius: 2%;
+  transition: 200ms ease-out;
+  overflow: visible;
+
+}
+
+.social-media:hover {
+  border: 1px solid #7f5539;
+}
+
+.imagencomentario {
+  display: block;
+  width: 50px;
+  margin-right: 12px;
+}
+
+.comentario {
+  align-items: flex-start;
+}
+
+.nombreusuario {
+  margin: 0;
+  font-size: 15px;
+}
+
+.fechacomentario {
+  margin: 0;
+  color: grey;
+}
+
+.fechacomentario--space {
+  display: block;
+  padding-left: 4px;
+  color: grey;
+}
+
+.estrellas {
+  display: flex;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  color: #EB6E00;
+}
+
+.textcomentario {
+  margin: 0;
+  font-size: 13px;
+}
+
+.boton-ver-mas {
+  margin-top: 1%;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 900;
+  color: #7f5539;
+  background-color: transparent;
+  border: 1px #b08968 solid;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.boton-ver-mas:hover {
+  background-color: #b08968;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.boton-ver-mas:active {
+  transform: translateY(-1px);
+}
+

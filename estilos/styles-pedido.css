@@ -1,60 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Indie+Flower&family=Open+Sans&display=swap');
 
-* {
-    font-family: 'Open Sans', sans-serif;
-}
 
 .div-info{
     width: 100%;
     text-align: center;
     font-size: 1.rem;
+    color: #505050;
 }
 
 form {
-    width: 100%
+    width: 100%;
 }
 
 form fieldset {
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: transparent;
-    border-color: transparent;
-}
+    display: inline-block;
+    margin-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align:center;
+    width: 40%;
+    border: transparent 1px solid;
+    border-radius: 2.5rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;}
 
-
-.input-group {
-    position: relative;
-    margin-top: 2%;
-    margin-left: 30%;
+.centrar-form{
+    width: 100%;
+    text-align: center;
 }
 
 .input {
-    width: 60%;
-    border: solid 1.5px #9e9e9e;
+    position: relative;
+    margin-top: 2%;
+}
+
+.estilo-input {
+    width: 90%;
+    border: solid 1.5px #b08968;
     border-radius: 1rem;
     background: none;
     padding: 1rem;
     font-size: 1rem;
-    color: #414141;
     transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.user-label {
+.estilo-label {
     position: absolute;
-    left: 15px;
-    color: #686868;
+    left: 2.2rem;
+    color: #b08968;
     pointer-events: none;
     transform: translateY(1rem);
     transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input:focus,
+.estilo-input:focus,
 input:valid {
     outline: none;
     border: 1.5px solid #7f5539;
 }
 
-.input:focus~label,
+.estilo-input:focus~label,
 input:valid~label {
     transform: translateY(-50%) scale(0.8);
     background-color: #ffffff;
@@ -62,18 +66,19 @@ input:valid~label {
     color: #7f5539;
 }
 
+
 .areatexto {
-    margin-top: 1rem;
-    width: 59%;
+    width: 89%;
     height: 150px;
     padding: 12px 20px;
     font-size: 2rem;
     box-sizing: borer-box;
-    border: 1px solid #9e9e9e;
+    border: 1px solid #b08968;
+    color: #b08968;
     border-radius: 1.5rem;
-    font-size: 16px;
     resize: none;
     font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 textarea:focus {
@@ -81,48 +86,81 @@ textarea:focus {
     border-color: #7f5539;
 }
 
+::placeholder{
+    color:#b08968
+}
+
 input[type="date"] {
-    background-color: #9e9e9e;
+    background-color: #ffffff;
     padding: 10px;
-    position: absolute;
     text-align: center;
     font-family: "Roboto Mono", monospace;
-    color: #ffffff;
+    color: #b08968;
     font-size: 18px;
-    border: none;
+    border: 1px solid #b08968;
     outline: none;
-    border-radius: 5px;
+    border-radius: 1.2rem;
     vertical-align: middle;
+}
+
+input[type="date"]:focus {
+    border: 1px solid #7f5539;
+}
+
+.fechayhora div{
+    display: inline-block;
+    text-align: left;
 }
 
 .fechaentrega {
-    color: #686868;
+    width: 40%;
+    margin-top: 1rem;
+    margin-left: .7rem;
+    text-align: center;
+    color: #b08968;
+}
+
+.fechaentrega div{
+    margin-bottom: .5rem;
 }
 
 .horario {
-    margin-top: 4rem;
-    color: #686868;
-    margin-bottom: 4rem;
+    width: 40%;
+    text-align: center;
+    margin-right: 5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: #b08968;
+    margin-bottom: 2rem;
+}
+
+.horario div{
+    margin-bottom: .5rem;
 }
 
 input[type="time"] {
-    background-color: #9e9e9e;
+    background-color: #ffffff;
     padding: 10px;
-    position: absolute;
     text-align: center;
     font-family: "Roboto Mono", monospace;
-    color: #ffffff;
+    color: #b08968;
     font-size: 18px;
-    border: none;
+    border: 1px solid #b08968;
     outline: none;
-    border-radius: 5px;
+    border-radius: 1.2rem;
     vertical-align: middle;
+}
+
+input[type="time"]:focus {
+    border: 1px solid #7f5539;
 }
 
 .boton {
     width: 75%;
     height: auto;
-    text-align: right;
+    text-align: left;
+    margin-left: 1.2rem;
+    padding-bottom: 2rem;
 }
 
 button {
@@ -134,7 +172,7 @@ button {
     text-decoration: none;
     background: #b08968;
     padding: 0;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
 }
 
 button.realizar-compra {
@@ -150,7 +188,7 @@ button.realizar-compra .circle {
     width: 3rem;
     height: 3rem;
     background: #7f5539;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
 }
 
 button.realizar-compra .circle .icon {
